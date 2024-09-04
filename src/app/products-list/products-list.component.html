@@ -1,0 +1,24 @@
+<hr>
+<button (click)="onCreate()" class="btn btn-primary">Create Product</button>
+<table class="table table-striped table-bordered table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Product Name</th>
+      <th scope="col">Category</th>
+      <th scope="col">Price</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.productName }}</td>
+      <td>{{ product.product_Categories}}</td>
+      <td>{{ product.price }}</td>
+      <td>
+        <button type="button" class="btn btn-primary" id="first">View</button>
+        <button (click)="onEdit(product._id)" type="button" class="btn btn-success" type="button" class="btn btn-success">Edit</button>
+        <button (click)="onDelete(product._id)" type="button" class="btn btn-danger" type="button" class="btn btn-danger">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
