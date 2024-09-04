@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */// Import Bootstrap's SCSS
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+// Your custom styles can go below
+
+
+body, html{
+    overflow-x: hidden !important;
+}
